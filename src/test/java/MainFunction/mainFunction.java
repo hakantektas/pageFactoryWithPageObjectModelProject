@@ -1,4 +1,4 @@
-package PageClass;
+package MainFunction;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -22,14 +22,14 @@ public class mainFunction {
 
     public void captureScreenShots() throws IOException {
 
-      folderName="screenshot";
-      File f= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        folderName="screenshot";
+        File f= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
-      df = new SimpleDateFormat("dd-MM-yyyy__hh_mm_ssaa");
+        df = new SimpleDateFormat("dd-MM-yyyy__hh_mm_ssaa");
 
-      new File(folderName).mkdir();
+        new File(folderName).mkdir();
 
-      String file_name = df.format(new Date())+ ".png";
+        String file_name = df.format(new Date())+ ".png";
         FileUtils.copyFile(f, new File(folderName+ "/" + file_name));
     }
 }
