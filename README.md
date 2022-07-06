@@ -3,24 +3,6 @@
 
 
 How to do Web Automation Tests with Page Object Model, Java 1.8, Selenium 3.141.59
-## Badges
-
-[![selenium License](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/512px-Selenium_logo.svg.png?20210927154434)](https://www.selenium.dev/)
-
-
-
-
-
-[![appium License](https://seeklogo.com/images/A/appium-logo-7A2DD5B4E3-seeklogo.com.png)](https://appium.io/)
-
-
-
-
-[![java License](https://upload.wikimedia.org/wikipedia/tr/thumb/2/2e/Java_Logo.svg/558px-Java_Logo.svg.png)](https://www.java.com/tr/download/manual.jsp)
-
-
-
-[![testNg License](https://blog.knoldus.com/wp-content/uploads/2020/01/TESTNG.png)](https://testng.org/doc/)
 
   
 ## Usage/Examples
@@ -100,5 +82,23 @@ mvn test
 ```
 
   
+## Badges
+
+[![selenium License](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/512px-Selenium_logo.svg.png?20210927154434)](https://www.selenium.dev/)
+
+
+
+
+
+[![appium License](https://seeklogo.com/images/A/appium-logo-7A2DD5B4E3-seeklogo.com.png)](https://appium.io/)
+
+
+
+
+[![java License](https://upload.wikimedia.org/wikipedia/tr/thumb/2/2e/Java_Logo.svg/558px-Java_Logo.svg.png)](https://www.java.com/tr/download/manual.jsp)
+
+
+
+[![testNg License](https://blog.knoldus.com/wp-content/uploads/2020/01/TESTNG.png)](https://testng.org/doc/)
 
   
