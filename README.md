@@ -2,7 +2,7 @@
 # Project Title
 
 
-How to do Web Automation Tests with Page Object Model, Java 1.8, Selenium 3.141.59?
+How to do Web Automation Tests with Page Object Model, Java 1.8, Selenium 3.141.59
 ## Badges
 
 [![selenium License](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/512px-Selenium_logo.svg.png?20210927154434)](https://www.selenium.dev/)
