@@ -88,13 +88,6 @@ mvn test
 
 
 
-
-
-[![appium License](https://seeklogo.com/images/A/appium-logo-7A2DD5B4E3-seeklogo.com.png)](https://appium.io/)
-
-
-
-
 [![java License](https://upload.wikimedia.org/wikipedia/tr/thumb/2/2e/Java_Logo.svg/558px-Java_Logo.svg.png)](https://www.java.com/tr/download/manual.jsp)
 
 
