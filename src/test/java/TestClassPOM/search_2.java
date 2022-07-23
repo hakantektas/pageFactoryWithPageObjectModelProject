@@ -23,21 +23,20 @@ public class search_2 extends driverManager {
     @Test(priority = 2,description = "Search Test Process 4")
     public void search_case1() throws InterruptedException, IOException {
         sPage = new searchPage(driver);
-        Thread.sleep(2000);
         sPage.search_function("New Test");
         hPage.homeCase();
     }
     @Test(priority = 3,description = "Search Test Process 5")
     public void search_case2() throws InterruptedException, IOException {
 
-        Thread.sleep(2000);
+        hPage.homeCase();
         sPage.search_function("Paralell Test");
         hPage.homeCase();
     }
     @Test(priority = 4,description = "Search Test Process 6")
     public void search_case3() throws InterruptedException, IOException {
 
-        Thread.sleep(2000);
+        hPage.homeCase();
         sPage.search_function("Firefox Test");
         hPage.homeCase();
     }

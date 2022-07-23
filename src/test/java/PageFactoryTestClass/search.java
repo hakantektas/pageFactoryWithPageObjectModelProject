@@ -29,26 +29,20 @@ public class search extends driverManager {
     @Test(priority = 2,description = "Search Test Process 1")
     public void search_case1() throws InterruptedException, IOException {
         sPage = new searchPage(driver);
-        Thread.sleep(1000);
-        sPage.search_function("Test Deneme");
-        Thread.sleep(1000);
         hPage.homeCase();
+        sPage.search_function("Test Deneme");
     }
     @Test(priority = 3,description = "Search Test Process 2")
     public void search_case2() throws InterruptedException, IOException {
 
-        Thread.sleep(1000);
-        sPage.search_function("Selenium web");
-        Thread.sleep(1000);
         hPage.homeCase();
+        sPage.search_function("Selenium web");
     }
     @Test(priority = 4,description = "Search Test Process 3")
     public void search_case3() throws InterruptedException, IOException {
 
-        Thread.sleep(1000);
-        sPage.search_function("appium");
-        Thread.sleep(1000);
         hPage.homeCase();
+        sPage.search_function("appium");
     }
 
 }

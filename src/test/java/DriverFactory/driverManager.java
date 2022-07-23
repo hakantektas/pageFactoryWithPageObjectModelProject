@@ -98,9 +98,9 @@ public class driverManager {
         waitForLoad(driver);
  }*/
     public void before(){
+        driver.get(url);
         driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(url);
         waitForLoad(driver);
     }
     @AfterTest(alwaysRun = true)
