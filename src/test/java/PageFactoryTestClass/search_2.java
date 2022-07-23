@@ -1,8 +1,8 @@
-package TestClass;
+package PageFactoryTestClass;
 
 import DriverFactory.driverManager;
-import PageFactory.homePage;
-import PageFactory.searchPage;
+import PageFactoryClass.homePage;
+import PageFactoryClass.searchPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;

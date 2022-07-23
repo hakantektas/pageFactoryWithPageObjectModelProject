@@ -29,27 +29,21 @@ public class driverManager {
     String driverPath_3="/Users/mobven/IdeaProjects/second_example_pom/drivers/operadriver";
 
 
+
     @Parameters("browser")
     @BeforeTest(alwaysRun = true)
     public void setup(@Optional("browser") String browser){
 
-        /*System.setProperty("webdriver.chrome.driver",driverPath);
-        driver = new ChromeDriver();*/
         switch (browser){
 
             case "chrome":{
 
                 System.setProperty("webdriver.chrome.driver",driverPath);
                 ChromeOptions chromeOptions = new ChromeOptions();
-                // WebDriverManager.chromedriver().setup();
                 chromeOptions.addArguments("start-maximized");
                 driver=new ChromeDriver();
                 System.out.println("***** Browser is chrome *****");
-                waitForLoad(driver);
-                driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-                driver.manage().window().maximize();
-                driver.get(url);
-
+                before();
                 break;
             }
             case "firefox":{
@@ -59,10 +53,7 @@ public class driverManager {
                 firefoxOptions.addArguments("start-maximized");
                 driver=new FirefoxDriver();
                 System.out.println("***** Browser is firefox *****");
-                waitForLoad(driver);
-                driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-                driver.manage().window().maximize();
-                driver.get(url);
+                before();
                 break;
             }
             case "opera":{
@@ -72,10 +63,7 @@ public class driverManager {
                 operaOptions.addArguments("start-maximized");
                 driver=new OperaDriver();
                 System.out.println("***** Browser is opera *****");
-                waitForLoad(driver);
-                driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-                driver.manage().window().maximize();
-                driver.get(url);
+                before();
                 break;
             }
             case "safari":{
@@ -83,17 +71,14 @@ public class driverManager {
                 SafariOptions safariOptions = new SafariOptions();
                 driver=new SafariDriver();
                 System.out.println("***** Browser is safari *****");
-                waitForLoad(driver);
-                driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-                driver.manage().window().maximize();
-                driver.get(url);
+                before();
                 break;
             }
             default:{
                 WebDriverManager.chromedriver().setup();
                 driver= new ChromeDriver();
                 System.out.println("*****browser start Chrome Bonigarcia");
-                waitForLoad(driver);
+                before();
                 break;
             }
         }
@@ -112,7 +97,12 @@ public class driverManager {
         setup(browser);
         waitForLoad(driver);
  }*/
-
+    public void before(){
+        driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get(url);
+        waitForLoad(driver);
+    }
     @AfterTest(alwaysRun = true)
     public void close(){
         if (driver!=null)

@@ -3,9 +3,9 @@
 <suite name="Test Run with Class">
     <test name="Test Run">
         <classes>
-            <class name="TestClass.search"></class>
-            <class name="TestClass.search_2"></class>
-            <class name="TestClass.search_3"></class>
+            <class name="PageFactoryTestClass.search"></class>
+            <class name="PageFactoryTestClass.search_2"></class>
+            <class name="PageFactoryTestClass.search_3"></class>
         </classes>
     </test>
 </suite>

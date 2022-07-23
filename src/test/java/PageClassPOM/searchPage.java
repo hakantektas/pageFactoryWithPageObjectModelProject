@@ -1,9 +1,8 @@
-package PageFactory;
+package PageClassPOM;
 
 import MainFunction.mainFunction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
@@ -18,7 +17,7 @@ public class searchPage extends mainFunction{
         Test project written without using Page factory and Page Object Model...
          */
     public searchPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+        this.driver = driver;
     }
 
     public void searchBox(String searchText) throws InterruptedException, IOException {
@@ -42,10 +41,10 @@ public class searchPage extends mainFunction{
     }
 
     public void  search_function(String searchText) throws InterruptedException, IOException {
-        searchPage sPage = new searchPage(driver);
-        sPage.searchBox(searchText);
-        sPage.searchBtn();
-        sPage.getLoginTitle();
+
+        this.searchBox(searchText);
+        this.searchBtn();
+        this.getLoginTitle();
     }
 
 }

@@ -1,8 +1,8 @@
-package TestClass;
+package TestClassPOM;
 
 import DriverFactory.driverManager;
-import PageFactory.homePage;
-import PageFactory.searchPage;
+import PageFactoryClass.homePage;
+import PageFactoryClass.searchPage;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;

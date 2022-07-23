@@ -1,18 +1,17 @@
-package PageFactory;
+package PageClassPOM;
 
 import MainFunction.mainFunction;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.junit.jupiter.api.Assertions;
 
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
-import static java.lang.Thread.*;
+import static java.lang.Thread.sleep;
 
 public class signUpPage extends mainFunction{
 
@@ -44,7 +43,7 @@ public class signUpPage extends mainFunction{
         Test project written without using Page factory and Page Object Model...
          */
     public signUpPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+        this.driver = driver;
     }
     public void joinUsButton(String email) throws IOException {
 
@@ -123,10 +122,10 @@ public class signUpPage extends mainFunction{
 
     }
     public void  signUpFuncion(String email,String username,String password) throws IOException, InterruptedException {
-        signUpPage signPage = new signUpPage(driver);
-        signPage.joinUsButton(email);
-        signPage.signUp(username,password);
-        signPage.signUpControl();
+
+        this.joinUsButton(email);
+        this.signUp(username,password);
+        this.signUpControl();
     }
 
 }

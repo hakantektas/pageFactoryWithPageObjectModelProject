@@ -4,10 +4,10 @@
     <test  name="Paralel test Chrome">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="TestClass.search"></class>
-            <class name="TestClass.search_2"></class>
-            <class name="TestClass.singUpTest"></class>
-            <class name="TestClass.search_3"></class>
+            <class name="PageFactoryTestClass.search"></class>
+            <class name="PageFactoryTestClass.search_2"></class>
+            <class name="PageFactoryTestClass.singUpTest"></class>
+            <class name="PageFactoryTestClass.search_3"></class>
         </classes>
     </test>
 </suite>

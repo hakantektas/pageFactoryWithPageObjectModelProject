@@ -10,7 +10,7 @@ How to do Web Automation Tests with Page Object Model, Java 1.8, Selenium 3.141.
 ```java
 // Create a class constructor searchPage pageFactory
 public homePage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+        PageFactoryClass.initElements(driver,this);
     }
 
 // Create an object of class searchPage (This will call the constructor)

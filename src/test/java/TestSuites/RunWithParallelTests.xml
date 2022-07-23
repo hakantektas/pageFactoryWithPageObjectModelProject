@@ -4,29 +4,29 @@
     <test name="Test Run 2">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="TestClass.search"></class>
-            <class name="TestClass.search_2"></class>
+            <class name="PageFactoryTestClass.search"></class>
+            <class name="PageFactoryTestClass.search_2"></class>
         </classes>
     </test>
     <test name="Test Run 3">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="TestClass.search"></class>
-            <class name="TestClass.search_2"></class>
+            <class name="PageFactoryTestClass.search"></class>
+            <class name="PageFactoryTestClass.search_2"></class>
         </classes>
     </test>
     <test name="Test Run 4">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestClass.search"></class>
-            <class name="TestClass.search_2"></class>
+            <class name="PageFactoryTestClass.search"></class>
+            <class name="PageFactoryTestClass.search_2"></class>
         </classes>
     </test>
     <test name="Test Run 5">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestClass.search"></class>
-            <class name="TestClass.search_2"></class>
+            <class name="PageFactoryTestClass.search"></class>
+            <class name="PageFactoryTestClass.search_2"></class>
         </classes>
     </test>
 </suite>

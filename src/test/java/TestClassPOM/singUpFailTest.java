@@ -1,8 +1,8 @@
-package TestClass;
+package TestClassPOM;
 
 import DriverFactory.driverManager;
-import PageFactory.homePage;
-import PageFactory.signUpPage;
+import PageFactoryClass.homePage;
+import PageFactoryClass.signUpPage;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

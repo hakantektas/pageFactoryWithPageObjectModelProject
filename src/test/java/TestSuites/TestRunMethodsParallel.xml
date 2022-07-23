@@ -4,7 +4,7 @@
     <test  name="Paralel test Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestClass.search">
+            <class name="PageFactoryTestClass.search">
                 <methods>
                     <include name="testTitleCorrect"/>
                     <include name="search_case1"/>
@@ -17,7 +17,7 @@
     <test name="chrom2">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="TestClass.search_2">
+            <class name="PageFactoryTestClass.search_2">
                 <methods>
                     <include name="testTitleCorrect"/>
                     <include name="search_case1"/>

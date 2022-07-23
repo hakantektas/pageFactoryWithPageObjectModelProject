@@ -1,9 +1,8 @@
-package PageFactory;
+package PageClassPOM;
 
 import MainFunction.mainFunction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 public class homePage extends mainFunction {
 
@@ -15,7 +14,7 @@ public class homePage extends mainFunction {
      */
 
     public homePage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+        this.driver = driver;
     }
     public void cookieAccept() throws InterruptedException {
 
@@ -38,10 +37,10 @@ public class homePage extends mainFunction {
         waitForLoad(driver);
     }
     public void homeCase() throws InterruptedException {
-        homePage hPage = new homePage(driver);
-        hPage.cookieAccept();
-        hPage.getLoginTitle();
-        hPage.home();
+
+        this.cookieAccept();
+        this.getLoginTitle();
+        this.home();
     }
 
 
