@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Paralel Test Suite" parallel="methods" thread-count="2">
+    <test  name="Paralel test Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestClass.search">
+                <methods>
+                    <include name="testTitleCorrect"/>
+                    <include name="search_case1"/>
+                    <include name="search_case2"/>
+                    <include name="search_case3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="chrom2">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestClass.search_2">
+                <methods>
+                    <include name="testTitleCorrect"/>
+                    <include name="search_case1"/>
+                    <include name="search_case2"/>
+                    <include name="search_case3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
