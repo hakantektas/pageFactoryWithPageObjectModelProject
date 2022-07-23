@@ -1,12 +1,10 @@
-package PageClass;
+package PageFactory;
 
 import MainFunction.mainFunction;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 public class searchPage extends mainFunction{

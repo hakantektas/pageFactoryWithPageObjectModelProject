@@ -1,4 +1,4 @@
-package PageClass;
+package PageFactory;
 
 import MainFunction.mainFunction;
 import org.openqa.selenium.By;

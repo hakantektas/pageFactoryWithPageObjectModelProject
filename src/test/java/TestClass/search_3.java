@@ -1,8 +1,8 @@
 package TestClass;
 
 import DriverFactory.driverManager;
-import PageClass.homePage;
-import PageClass.searchPage;
+import PageFactory.homePage;
+import PageFactory.searchPage;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

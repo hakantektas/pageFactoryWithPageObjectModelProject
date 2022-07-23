@@ -1,8 +1,8 @@
 package TestClass;
 
 import DriverFactory.driverManager;
-import PageClass.homePage;
-import PageClass.signUpPage;
+import PageFactory.homePage;
+import PageFactory.signUpPage;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
