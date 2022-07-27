@@ -24,9 +24,9 @@ public class driverManager {
     public static WebDriverWait wait;
     public static int timeout = 30;
     String url= "https://www.testrelic.com/";
-    String driverPath="/Users/mobven/IdeaProjects/second_example_pom/drivers/chromedriver";
-    String driverPath_2="/Users/mobven/IdeaProjects/second_example_pom/drivers/geckodriver";
-    String driverPath_3="/Users/mobven/IdeaProjects/second_example_pom/drivers/operadriver";
+    String driverPath="/Users/mobven/IdeaProjects/pageFactoryWithPageObjectModelProject/drivers/chromedriver";
+    String driverPath_2="/Users/mobven/IdeaProjects/pageFactoryWithPageObjectModelProject/drivers/geckodriver";
+    String driverPath_3="/Users/mobven/IdeaProjects/pageFactoryWithPageObjectModelProject/drivers/operadriver";
 
 
 
